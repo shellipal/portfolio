@@ -74,7 +74,7 @@
 }
 
 .hero-right {
-  flex: 1;
+  flex: 1; /*divide in equal parts */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,4 +143,87 @@
 
 .cv-btn {
   border: 2px solid orange;
+}
+
+/* ................About us Section .............. */
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px;
+  background: linear-gradient(90deg, #181527, #462900);
+}
+
+.about-right {
+  flex: 1;
+  padding: 0px 20px;
+}
+.about-right > h1 {
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  padding-bottom: 20px;
+}
+.about-right > h1 > span {
+  color: rgb(240, 95, 43);
+}
+
+.about-right > h2 {
+  font-weight: 600;
+  font-size: 30pxa;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+  color: rgb(243, 168, 140);
+}
+
+.about-right > p {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+  color: rgb(197, 197, 197);
+}
+
+.about-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.about-images > div > img {
+  overflow: hidden;
+  object-fit: cover;
+  width: 200px;
+  height: 250px;
+  border: 5px solid orange;
+  border-radius: 10px;
+}
+
+.about-grid {
+  font-weight: 800;
+  letter-spacing: 1px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.about-grid > div > p {
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding-bottom: 15px;
+  color: rgb(197, 197, 197);
+}
+
+.about-icon {
+  color: rgb(240, 95, 43);
 }
