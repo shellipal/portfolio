@@ -171,7 +171,7 @@
 
 .about-right > h2 {
   font-weight: 600;
-  font-size: 30pxa;
+  font-size: 30px;
   letter-spacing: 1px;
   padding-bottom: 20px;
   color: rgb(243, 168, 140);
@@ -257,7 +257,7 @@
 
 .skill > h2 {
   font-weight: 600;
-  font-size: 30pxa;
+  font-size: 30px;
   letter-spacing: 1px;
   padding-bottom: 20px;
   color: rgb(243, 168, 140);
@@ -283,4 +283,158 @@
 
 .skills-card > h2 {
   text-align: center;
+}
+
+/* ---------education section --------- */
+
+.education {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+.edu-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.edu-left > img {
+  width: 450px;
+  height: 570px;
+  border: 22px solid rgb(255, 115, 0);
+  border-radius: 10px;
+}
+
+.edu-right {
+  flex: 1;
+  padding: 0px 20px;
+}
+.edu-right > h1 {
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  padding-bottom: 20px;
+}
+
+.edu-right > h2 {
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+  color: rgb(243, 168, 140);
+}
+
+.edu-item > span {
+  background-color: rgb(243, 119, 18);
+  border: 2px solid rgb(255, 85, 0);
+  border-radius: 25px;
+  padding: 4px;
+}
+
+.edu-item > h2 {
+  margin: 15px;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: rgb(243, 168, 140);
+}
+
+.edu-item > h3 {
+  margin: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding-bottom: 15px;
+  color: rgb(197, 197, 197);
+}
+
+/* ----------contact section --------------- */
+
+.contact {
+  flex-direction: column;
+}
+.cont-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont-heading > h1 {
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  padding-bottom: 20px;
+}
+.cont-heading > h1 > span {
+  color: rgb(240, 95, 43);
+}
+
+.cont-heading > h2 {
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+  color: rgb(243, 168, 140);
+}
+
+.cont-email {
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.cont-email > span > a {
+  color: rgb(197, 197, 197);
+}
+
+.cont-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  border-bottom: 2px solid beige;
+}
+
+.cont-social > h2 {
+  font-size: 45px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  padding-bottom: 40px;
+  /* margin-bottom: 10px; */
+}
+.social-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+.social-list-div > img {
+  width: 80px;
+}
+
+/* --------------footer---------------------- */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo > img {
+  width: 150px;
+}
+
+.footer-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.f-item {
+  font-size: 25px;
 }
