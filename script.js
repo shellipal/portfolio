@@ -7,7 +7,7 @@ const projects = [
     description:
       "Todo app with add, update and delete functionality with great UI",
     tech: ["HTML", "CSS", "JS"],
-    image: "/images/projects/bookverse.png",
+    image: "./images/projects/bookverse.png",
     github: "https://github.com/shellipal/todo",
     live: "https://github.com/shellipal/todo",
   },
@@ -16,7 +16,7 @@ const projects = [
     title: "Blog App",
     description:
       "Todo app with add, update and delete functionality with great UI",
-    image: "/images/projects/recipe.png",
+    image: "./images/projects/recipe.png",
     tech: ["HTML", "CSS", "JS"],
     github: "https://github.com/shellipal/todo",
     live: "https://github.com/shellipal/todo",
@@ -26,7 +26,7 @@ const projects = [
     title: "Portfolio",
     description:
       "Todo app with add, update and delete functionality with great UI",
-    image: "/images/projects/imggen.png",
+    image: "./images/projects/imggen.png",
     tech: ["HTML", "CSS", "JS"],
     github: "https://github.com/shellipal/todo",
     live: "https://github.com/shellipal/todo",
