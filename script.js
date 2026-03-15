@@ -53,10 +53,10 @@ projectsList.innerHTML = projects
                 <!-- ------------icons----------------- -->
                 <div class="project-icon">
                     <span class="icon">
-                        <img src="/images/projects/github.png" alt="github">
+                        <img src="./images/projects/github.png" alt="github">
                     </span>
                     <span class="icon">
-                        <img src="/images/projects/play-button.png" alt="link">
+                        <img src="./images/projects/play-button.png" alt="link">
                     </span>
                 </div>
             </div>
