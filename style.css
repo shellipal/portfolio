@@ -295,23 +295,72 @@
   grid-template-columns: repeat(3, 1fr);
   /* grid-template-rows: repeat(2, 1fr); */
   gap: 20px;
+  margin-top: 20px;
 }
 .project-card {
-  width: 100%;
-  border: 2px solid orangered;
-  padding: 20px;
+  width: 400px;
+  border: 3px solid rgb(255, 115, 0);
   border-radius: 10px;
+  overflow: hidden;
+  position: relative;
 }
 .project-card > img {
-  width: 300px;
-  border-radius: 20px;
+  width: 100%;
 }
-.project-card > h1 {
-  margin-top: 10px;
+.card-info {
+  padding: 20px;
 }
-.project-card > p {
-  margin-top: 10px;
+.card-title {
+}
+.card-desc {
+  margin-top: 5px;
   color: rgb(167, 167, 167);
+}
+.card-hash {
+  font-size: 12px;
+  font-weight: 800;
+  margin-top: 15px;
+}
+
+/* ----------------project icons----------------- */
+
+.project-icon {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.icon {
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.icon > img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+/* First span */
+.card-hash > span {
+  /* color: white; */
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.card-hash > span:nth-child(1) {
+  color: yellow;
+}
+
+/* Second span */
+.card-hash > span:nth-child(2) {
+  color: rgb(133, 133, 255);
+}
+
+/* Third span */
+.card-hash > span:nth-child(3) {
+  color: rgb(255, 163, 135);
 }
 
 /* ---------education section --------- */
