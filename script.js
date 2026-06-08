@@ -1,4 +1,14 @@
-// console.log("hello world!!!");
+const menuBtn = document.getElementById("menuBtn");
+const closeBtn = document.getElementById("closeBtn");
+const sidebar = document.getElementById("sidebar");
+
+menuBtn.addEventListener("click", () => {
+  sidebar.classList.toggle("active");
+});
+
+closeBtn.addEventListener("click", () => {
+  sidebar.classList.remove("active");
+});
 
 const projects = [
   {
@@ -18,8 +28,8 @@ const projects = [
       "Todo app with add, update and delete functionality with great UI",
     image: "./images/projects/recipe.png",
     tech: ["HTML", "CSS", "JS"],
-    github: "https://github.com/shellipal/todo",
-    live: "https://github.com/shellipal/todo",
+    github: "https://github.com/shellipal/Recipe",
+    live: "https://shellipal.github.io/Recipe",
   },
   {
     id: 3,
@@ -52,12 +62,16 @@ projectsList.innerHTML = projects
                 </div>
                 <!-- ------------icons----------------- -->
                 <div class="project-icon">
+                <a href=${project.github} target="_blank">
                     <span class="icon">
                         <img src="./images/projects/github.png" alt="github">
-                    </span>
+                        </span>
+                        </a>
+                        <a href=${project.live} target="_blank">
                     <span class="icon">
                         <img src="./images/projects/play-button.png" alt="link">
-                    </span>
+                        </span>
+                        </a>
                 </div>
             </div>
   `,
