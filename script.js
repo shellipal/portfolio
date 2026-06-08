@@ -2,6 +2,8 @@ const menuBtn = document.getElementById("menuBtn");
 const closeBtn = document.getElementById("closeBtn");
 const sidebar = document.getElementById("sidebar");
 
+const socialsList = document.getElementById("social-items");
+
 menuBtn.addEventListener("click", () => {
   sidebar.classList.toggle("active");
 });
@@ -13,19 +15,19 @@ closeBtn.addEventListener("click", () => {
 const projects = [
   {
     id: 1,
-    title: "Todo App",
+    title: "Book Verse",
     description:
-      "Todo app with add, update and delete functionality with great UI",
-    tech: ["HTML", "CSS", "JS"],
+      "Discover and explore books using the Google Books API with real-time search and detailed book information.",
+    tech: ["HTML", "CSS", "JS", "REACT.JS", "TAILWIND.CSS"],
     image: "./images/projects/bookverse.png",
-    github: "https://github.com/shellipal/todo",
-    live: "https://github.com/shellipal/todo",
+    github: "https://github.com/shellipal/BookVerse",
+    live: "https://bookverseapp.vercel.app/",
   },
   {
     id: 2,
-    title: "Blog App",
+    title: "Recipe Finder",
     description:
-      "Todo app with add, update and delete functionality with great UI",
+      "Find recipes instantly with a user-friendly interface, detailed ingredients, and cooking instructions.",
     image: "./images/projects/recipe.png",
     tech: ["HTML", "CSS", "JS"],
     github: "https://github.com/shellipal/Recipe",
@@ -33,13 +35,13 @@ const projects = [
   },
   {
     id: 3,
-    title: "Portfolio",
+    title: "Random Image Generator",
     description:
-      "Todo app with add, update and delete functionality with great UI",
+      "Generate random images dynamically through API integration and responsive web design.",
     image: "./images/projects/imggen.png",
     tech: ["HTML", "CSS", "JS"],
-    github: "https://github.com/shellipal/todo",
-    live: "https://github.com/shellipal/todo",
+    github: "https://github.com/shellipal/Random-Images",
+    live: "https://shellipal.github.io/Random-Images/",
   },
 ];
 
@@ -74,6 +76,44 @@ projectsList.innerHTML = projects
                         </a>
                 </div>
             </div>
+  `,
+  )
+  .join("");
+
+const contacts = [
+  {
+    id: 1,
+    title: "Linkedin",
+    image: "images/linkedin.png",
+    link: "https://www.linkedin.com/in/shelli-pal-1b20202aa/",
+  },
+  {
+    id: 2,
+    title: "Github",
+    image: "images/github.png",
+    link: "https://github.com/shellipal",
+  },
+
+  {
+    id: 4,
+    title: "Leetcode",
+    image: "images/leetcode.png",
+    link: "https://leetcode.com/u/Shelli_pal/",
+  },
+];
+
+socialsList.innerHTML = contacts
+  .map(
+    (contact, i) =>
+      `
+    <a href="${contact.link}" target="_blank" rel="noopener noreferrer">
+    <div class="social-list">
+      <div class="social-list-div">
+          <img src=${contact.image} alt="">
+      </div>
+      <h3>${contact.title}</h3>
+  </div>
+  </a>
   `,
   )
   .join("");
